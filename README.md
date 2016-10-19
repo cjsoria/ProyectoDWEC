@@ -1,3 +1,3 @@
 # ProyectoDWEC
-Proyecto para DWEC
+Proyecto para DWEC.
 <h1> Ejemplo de marcas</h1>
