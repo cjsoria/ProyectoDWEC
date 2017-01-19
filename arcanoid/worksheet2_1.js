@@ -1,15 +1,15 @@
 class RandomBall {
 	constructor() {
-		this.cy = 10;
-		this.cx = 10;
+		this.cy = 440;
+		this.cx = 320;
 		this.buildBall();
 	}
 
 	buildBall() {
 		this.circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
 			document.getElementById("camp").appendChild(this.circle);
-		this.circle.setAttribute("cy", "10");
-		this.circle.setAttribute("cx", "10");
+		this.circle.setAttribute("cy", "440");
+		this.circle.setAttribute("cx", "320");
 		this.circle.setAttribute("r", "5");
 		this.circle.setAttribute("fill", "black");
 	}
@@ -34,7 +34,7 @@ class Game {
 	}
 
 	move(that) {
-		that.ball.cy++;
+		that.ball.cy--;
 		that.ball.cx++;
 		that.ball.circle.setAttribute("cy", `${that.ball.cy}`);
 		that.ball.circle.setAttribute("cx", `${that.ball.cx}`);
@@ -42,7 +42,7 @@ class Game {
 
 	loop() {
 		var that = this;
-		this.inte = setInterval(()=>this.move(that), 50);
+		this.inte = setInterval(()=>this.move(that), 25);
 	}
 
 	start() {

@@ -29,7 +29,6 @@ class Tablero {
 	}
 }
 
-
 class Modelo {
 	constructor() {
 		this.t = new Tablero();
